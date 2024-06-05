@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+   padding:0;
+   box-sizing: border-box;
+   outline:none;
+   font-family: "Signika Negative",sans-serif;
+       }
+   
+   html{
+       font-size:62.5%;
+       
+   }
+   
+   .reci{
+       width:100%;
+       height: 100vh;
+       background:linear-gradient(#313131,#151515);
+       display:flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .player{
+       width: 35rem;
+       height: 70rem;
+       background: linear-gradient(to right,#313234,#2f3031);
+       box-shadow: 0 1rem 5rem rgba(0,0,0,0.4);
+       border-radius: 3rem;
+       display:flex;
+       flex-direction: column;
+       padding: 3rem;
+       }
+   
+   .player-top{
+       width: 100%;
+       display:flex;
+       justify-content: space-between;
+       align-items: center;
+       
+   }
+   .player-btn{
+       width:  4rem;
+       height:	4rem;
+       border: 0.2rem solid rgba(255,255,255,0.1);
+       border-radius: 50%;
+       background-color: #2b2c2e;
+       color:#a8a9ab;
+       box-shadow: 0.5rem 0.5rem 2rem -0.1rem rgba(0,0,0,0.5),-0.4rem -0.4rem 2rem -0.1rem rgba(255,255,255,0.2);
+       cursor: pointer;
+       }
+   .player-btn:active {
+       transform: translateY(0.2rem);/*faz o efeito de clique no botão*/
+       }
+   .player-top span{
+       font-size: 1.3rem;
+       color: #a8a9ab;
+       }
+   
+   .player-body{
+       width:  100%;
+       height: 55%;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       
+   }
+   
+   .musica-atual {
+   width:  18rem;
+   height: 18rem;
+   border: 0.5rem solid rgba(255,255,255,0.15);
+   border-radius: 50%;
+   box-shadow: 0.6rem 0.6rem 4rem -0.1rem rgba(0,0,0,0.9),-0.6rem -0.6rem 4rem -0.2rem rgba(255,255,255,0.4);
+   position: relative;
+   transform: rotateZ(-15deg);
+   }
+   
+   .capa {
+       width: 100%;
+       height: 100%;
+       background-color: #DA81F5;
+       border-radius: 50%;
+       
+   }
+   .capa span {
+       font-family: "Delicious Handrawn",cursive;
+       position: absolute;
+       display: block;
+       }
+   .capa span:nth-child(1) {
+       color:black;
+       font-size: 1.6rem;
+       top: 20%;
+       left: 30%;
+   }
+   
+   .capa span:nth-child(2) {
+       color:#fff;
+       font-size: 2.5rem;
+       top: 35%;
+       left: 20%;
+       width:  10rem;
+       text-align: center;
+   }
+   
+   .info-som {
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 3rem;
+       
+   }
+   
+   .detalhes-som {
+       display:flex;
+       flex-direction: column;
+       
+   }
+   
+   .nome-som {
+       font-size: 2rem;
+       font-weight:  300;
+       color: #fff;
+   }
+   
+   .nome-artista {
+       font-size: 1.2rem;
+       color: #a8a9ab;
+       }
+   
+   .info-som i {
+       font-size: 2rem;
+       background: linear-gradient(to right, #DF01D7, #F5A9F2);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+   }
+   
+   .tempo-som {
+       width:  100%;
+       height: .5rem;
+       background-color: #0c0c0d;
+       border-radius: .5rem;
+       margin-bottom: 1rem;
+       box-shadow: .2rem .2rem .2rem  rgba(255,255,255,0.1);
+       cursor: pointer;
+       position: relative;
+       }
+   
+   .progresso-som {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width:  30%;
+       height:  100%;
+       background: linear-gradient(to right, #DF01D7, #F5A9F2);
+       border-radius: 0.5rem;
+       }
+   
+   .tempo {
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 3rem;
+   }
+   
+   .tempo span{
+       font-size: 1.2rem;
+       color: #a8a9ab;
+       }
+   
+   .controles{
+       width:  100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       }
+   
+   .play-pause{
+       width: 5rem;
+       height: 5rem;
+       background:linear-gradient(to right, #DF01D7, #F5A9F2); 
+       color: #fff;
+       box-shadow: 0.5rem 0.5rem 2rem -0.1rem rgba(0,0,0,0.8),-0.8rem -0.8rem 2rem -0.1rem rgba(255,255,255,0.4); 
+       }
+   
+   .player-cabecalho {
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: auto;
+   }
+   
+   .player-cabecalho i {
+       font-size: 1.8rem;
+       color: #a8a9ab;
+       }
+   
+   .player-cabecalho span {
+       font-size: 1.2rem;
+       color: #a8a9ab;
+       }
