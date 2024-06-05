@@ -5,9 +5,9 @@ const songData =[
 		src:'Ale Loya -Native.mp3',
 		},
 {
-    name: 'Ale Loya',
-    artist:'Native',
-    src:'Ale Loya -Native.mp3',
+    name: 'Mulholland',
+    artist:'King Canyon',
+    src:'Mulholland- King Canyon.mp3',
     },
 ]
 
