@@ -82,6 +82,21 @@
        border-radius: 50%;
        
    }
+   .rotate {
+    animation:capaRotate 10s linear infinite;
+
+   }
+
+   @keyframes capaRotate{
+     0% {
+        transform: rotateZ(0);
+     }
+
+     100% {
+        transform: rotateZ(360deg)
+     }
+   }
+
    .capa span {
        font-family: "Delicious Handrawn",cursive;
        position: absolute;

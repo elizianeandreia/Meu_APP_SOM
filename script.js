@@ -48,13 +48,15 @@ const loadSong = (index) => {
 const playSong = () => {
 	reci.classList.add('pause')
 	playPlauseBtn.firstElementChild.className = 'fa-solid fa-pause'
-	audio.play();
+	audio.play()
+	capa.classList.add('rotate')
 	}
 
 const pauseSong = () => {
 	reci.classList.remove('pause')
 	playPlauseBtn.firstElementChild.className = 'fa-solid fa-play'
-	audio.pause();
+	audio.pause()
+	capa.classList.remove('rotate')
 	}
 
 playPlauseBtn.addEventListener('click',() => {
