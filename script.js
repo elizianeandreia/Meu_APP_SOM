@@ -1,4 +1,10 @@
 const songData =[
+
+	{
+		name: 'Corey Taylor',
+		artist:'Snuff Lyrics',
+		src:'Corey Taylor - Snuff Lyrics.mp3',
+		},
 	{
 		name: 'Ale Loya',
 		artist:'Native',
@@ -36,7 +42,7 @@ const loadSong = (index) => {
 	capaArtista.textContent = songData[index].artist
 	Nomesom.textContent = songData[index].name
 	ArtistaSom.textContent = songData[index].artist
-	audio.src = `music/${songData[index].src}.mp3`
+	audio.src = `music/${songData[index].src}.`
 }
 
 const playSong = () => {
