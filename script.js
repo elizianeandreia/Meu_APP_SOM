@@ -87,3 +87,10 @@ const proximoSomPlay = () => {
 
 anteriorBtn.addEventListener("click",anteriorSomPlay)
 proximoBtn.addEventListener("click",proximoSomPlay)
+
+audio.addEventListener('tempoatt', (e) => {
+const horaAtual = e.target.horaAtual
+const duracao = e.target.duracao
+let larguraHoraAtual = (horaAtual/duracao) * 100
+ProgressoSom.style.width = `${horaAtual}%`
+})

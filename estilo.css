@@ -166,7 +166,7 @@
        position: absolute;
        top: 0;
        left: 0;
-       width:  30%;
+       width:  0;
        height:  100%;
        background: linear-gradient(to right, #DF01D7, #F5A9F2);
        border-radius: 0.5rem;
