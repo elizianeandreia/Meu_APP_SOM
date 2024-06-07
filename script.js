@@ -91,6 +91,6 @@ proximoBtn.addEventListener("click",proximoSomPlay)
 audio.addEventListener("tempoatt", (e) => {
 const tempoAtual = e.target.tempoAtual
 const duracao = e.target.duracao
-let tempoAtualwidth = (tempoAtualAtual/duracao) * 100
-ProgressoSom.style.width = `${tempoAtual}%`
+let tempoAtualwidth = (tempoAtual/duracao) * 100
+ProgressoSom.style.width = `${tempoAtualwidth}%`
 })
