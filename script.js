@@ -66,3 +66,24 @@ playPlauseBtn.addEventListener('click',() => {
 		playSong();
 	}
 })
+
+const anteriorSomPlay = () => {
+	songIndex--
+	if(songIndex < 0){
+		songIndex = songData.length - 1
+	}
+	loadSong(songIndex)
+	playSong()
+}
+
+const proximoSomPlay = () => {
+	songIndex++
+	if(songIndex > songData.length - 1){
+		songIndex = 0
+	}
+	loadSong(songIndex)
+	playSong()
+}
+
+anteriorBtn.addEventListener("click",anteriorSomPlay)
+proximoBtn.addEventListener("click",proximoSomPlay)
