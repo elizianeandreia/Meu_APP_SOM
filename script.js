@@ -119,4 +119,11 @@ audio.addEventListener('timeupdate', (e) => {
 
 		songCurrentTime.textContent= `${MinutosAtuais}:${SegundosAtuais}`
 	})
-		
+	TempoSom.addEventListener('click',(e) => {
+		let progressWidth = TempoSom.clientWidth
+		let clickedOffsetX = e.offsetX	
+		let songDuration = audio.duration
+		audio.currentTime = (clickedOffsetX/progressWidth) * songDuration
+		playSong()
+		})
+	
