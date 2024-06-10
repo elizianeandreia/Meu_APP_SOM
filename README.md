@@ -8,5 +8,7 @@ Esse projeto é para criar um app de música similar ao Spotify.
 Demais fontes podem ser encontradas <a href="https://fonts.google.com/"> aqui </a>
 
 Para escutar as músicas você precisa baixa-las :<a href="https://github.com/elizianeandreia/Meu_APP_SOM/tree/main/music"> Aqui </a>
+Clique no nome da música , vá até os ("três pontinhos") ... e faça download :)
+
  
 
