@@ -126,4 +126,6 @@ audio.addEventListener('timeupdate', (e) => {
 		audio.currentTime = (clickedOffsetX/progressWidth) * songDuration
 		playSong()
 		})
+
+	audio.addEventListener('ended',proximoSomPlay)
 	
