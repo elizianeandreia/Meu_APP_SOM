@@ -93,7 +93,7 @@ audio.addEventListener('timeupdate', (e) => {
 	const duration = e.target.duration
 	let currentTimeWidth = (currentTime/duration) * 100
 	ProgressoSom.style.width = `${currentTimeWidth}%`
-	})
+	
 
 	let songCurrentTime = document.querySelector('.tempo span:nth-child(1)')
 	let songDuration = document.querySelector('.tempo span:nth-child(2)')
@@ -108,6 +108,15 @@ audio.addEventListener('timeupdate', (e) => {
 			totalSegundos = `0${totalSegundos}`
 		}
 		
-		songDuration.textContent =`${totalMinutos}:${totalSegundos}`
+		songDuration.textContent = `${totalMinutos}:${totalSegundos}`
+		})
+		let MinutosAtuais = Math.floor(currentTime/60)
+		let SegundosAtuais = Math.floor(currentTime % 60)
+
+		if(MinutosAtuais<10){
+			SegundosAtuais= `0${SegundosAtuais}`
+		}
+
+		songCurrentTime.textContent= `${MinutosAtuais}:${SegundosAtuais}`
 	})
-	
+		
